@@ -5,35 +5,6 @@ import random
 import datetime
 
 
-
-HEADER_COLOR_CYCLE = itertools.cycle(
-    [
-        "#00c0f2",  # light-blue-70",
-        "#ffbd45",  # "orange-70",
-        "#00d4b1",  # "blue-green-70",
-        "#1c83e1",  # "blue-70",
-        "#803df5",  # "violet-70",
-        "#ff4b4b",  # "red-70",
-        "#21c354",  # "green-70",
-        "#faca2b",  # "yellow-80",
-    ]
-)
-    
-def colored_header(label, description=None, color=None):
-    """Shows a header with a colored underline and an optional description."""
-    st.write("")
-    if color is None:
-        color = next(HEADER_COLOR_CYCLE)
-    st.subheader(label)
-    st.write(
-        f'<hr style="background-color: {color}; margin-top: 0; margin-bottom: 0; height: 3px; border: none; border-radius: 3px;">',
-        unsafe_allow_html=True,
-    )
-    if description:
-        st.caption(description)
-
-
-
 def main ():
     #DATE_COLUMN = 'date/time'
     st.title('お疲れ様です！！！')
