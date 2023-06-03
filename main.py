@@ -10,7 +10,8 @@ def main ():
     st.title('お疲れ様です！！！')
     dt = datetime.datetime.today()  # ローカルな現在の日付と時刻を取得
     st.title(f"今日は {dt.year}年 {dt.month}月 {dt.day}日です!!!")
-    path = r'C:\Users\PC_User\da-ueno\streamlit\Menu\menu.xlsx'
+    #path = r'C:\Users\PC_User\da-ueno\streamlit\Menu\menu.xlsx'
+    path = r'menu.xlsx'
     df = pd.read_excel(path,sheet_name='Menu',index_col=0)
 
     #path = r'menu.csv'
